@@ -18,6 +18,8 @@ nohup /v2ray/v2ray -config=/v2ray/config.json >out.txt 2>&1 &
 wget https://github.com/byxiaopeng/goorm-v2ray/raw/master/tls-shunt-proxy
 chmod +x /v2ray/tls-shunt-proxy
 
+rm -rf /etc/tls-shunt-proxy
+mkdir /etc/tls-shunt-proxy
 wget -P /etc/tls-shunt-proxy https://raw.githubusercontent.com/byxiaopeng/goorm-v2ray/master/tls/config.yaml
 
 nohup /v2ray/tls-shunt-proxy -config /etc/tls-shunt-proxy/config.yaml >out1.txt 2>&1 &

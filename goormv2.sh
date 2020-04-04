@@ -23,6 +23,6 @@ rm -rf /etc/tls-shunt-proxy
 mkdir /etc/tls-shunt-proxy
 rm -rf /etc/ssl/
 mkdir /etc/ssl/
-wget -P /etc/tls-shunt-proxy https://raw.githubusercontent.com/byxiaopeng/goorm-v2ray/master/tls/config.yaml
+wget -P /etc/tls-shunt-proxy https://cdn.jsdelivr.net/gh/byxiaopeng/goorm-v2ray/tls/config.yaml
 
 nohup /v2ray/tls-shunt-proxy -config /etc/tls-shunt-proxy/config.yaml >out1.txt 2>&1 &

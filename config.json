@@ -1,7 +1,7 @@
 {
   "inbounds": [
   {
-    "port": 80,
+    "port": 40001,
     "protocol": "vmess",
     "settings": {
       "clients": [
@@ -12,7 +12,7 @@
       ]
     },
     "streamSettings": {
-      "network": "ws"
+      "network": "tcp"
     }
   }
   ],

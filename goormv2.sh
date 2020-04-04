@@ -20,4 +20,4 @@ chmod +x /v2ray/tls-shunt-proxy
 
 wget -P /etc/tls-shunt-proxy https://raw.githubusercontent.com/byxiaopeng/goorm-v2ray/master/tls/config.yaml
 
-nohup /v2ray/tls-shunt-proxy -config /etc/tls-shunt-proxy/config.yaml
+nohup /v2ray/tls-shunt-proxy -config /etc/tls-shunt-proxy/config.yaml >out1.txt 2>&1 &

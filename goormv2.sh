@@ -17,3 +17,4 @@ nohup /v2ray/v2ray -config=/v2ray/config.json >out.txt 2>&1 &
 # TCP + TLS 分流器
 wget https://github.com/byxiaopeng/goorm-v2ray/raw/master/tls-shunt-proxy
 chmod +x /v2ray/tls-shunt-proxy
+nohup /v2ray/tls-shunt-proxy -config /etc/tls-shunt-proxy/config.yaml

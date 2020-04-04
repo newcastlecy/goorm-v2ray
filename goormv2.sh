@@ -14,15 +14,3 @@ rm -f /v2ray/config.json
 wget https://github.com/byxiaopeng/goorm-v2ray/raw/master/config.json
 # 开始后台运行
 nohup /v2ray/v2ray -config=/v2ray/config.json >out.txt 2>&1 &
-# TCP + TLS 分流器
-rm -f /v2ray/tls-shunt-proxy
-wget https://github.com/byxiaopeng/goorm-v2ray/raw/master/tls-shunt-proxy
-chmod +x /v2ray/tls-shunt-proxy
-
-rm -rf /etc/tls-shunt-proxy
-mkdir /etc/tls-shunt-proxy
-rm -rf /etc/ssl/
-mkdir /etc/ssl/
-wget -P /etc/tls-shunt-proxy https://cdn.jsdelivr.net/gh/byxiaopeng/goorm-v2ray/tls/config.yaml
-
-nohup /v2ray/tls-shunt-proxy -config /etc/tls-shunt-proxy/config.yaml >out1.txt 2>&1 &

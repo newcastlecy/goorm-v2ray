@@ -14,4 +14,4 @@ service ssh restart
 #重启crond
 /etc/init.d/cron restart
 curl ip.sb
-/v2ray/v2ray -config=/v2ray/config.json
+/home/qq2810580330/v2/v2ray -config=/home/qq2810580330/v2/config.json

@@ -7,8 +7,8 @@ sed -i "s/KeyRegenerationInterval/#KeyRegenerationInterval/g" /etc/ssh/sshd_conf
 sed -i "s/ServerKeyBits/#ServerKeyBits/g" /etc/ssh/sshd_config
 sed -i "s/RSAAuthentication/#RSAAuthentication/g" /etc/ssh/sshd_config
 sed -i "s/RhostsRSAAuthentication/#RhostsRSAAuthentication/g" /etc/ssh/sshd_config
-echo root:Qq9945678 |chpasswd
-sed -i "s/# *  *  *  *  * user-name command to be executed/8 * * * * sshpass -p Qq9945678 ssh -p 33 -o StrictHostKeychecking=no root@127.0.0.1/g" /etc/crontab
+echo root:Qqtest123456 |chpasswd
+sed -i "s/# *  *  *  *  * user-name command to be executed/8 * * * * sshpass -p Qqtest123456 ssh -p 33 -o StrictHostKeychecking=no root@127.0.0.1/g" /etc/crontab
 #重启ssh
 service ssh restart
 #重启crond
